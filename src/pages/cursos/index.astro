@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
+import Button from '../../components/Button.astro';
 import CursoCard from '../../components/CursoCard.astro';
 import TabsCarousel from '../../components/TabsCarousel.astro';
 import { getCollection } from 'astro:content';
@@ -15,19 +16,150 @@ const tabs = Object.entries(categorias).map(([key, cat]) => ({
   label: cat.label,
   cursos: cursos.filter(c => c.data.categoria === key),
 })).filter(t => t.cursos.length > 0);
+
+const cursosInfo = [
+  {
+    key: 'baby',
+    label: 'Musicalização para Bebês',
+    idade: 'A partir de 6 meses',
+    duracao: '50 minutos',
+    frequencia: '1 aula por semana',
+    formato: 'Individual, em dupla ou em trio',
+    objetivo: 'O curso de Musicalização Baby é um convite para que os pequenos, a partir dos 6 meses, tenham seu primeiro contato com o universo sonoro de forma divertida e natural.',
+    estrutura: 'As aulas são pensadas para estimular a percepção musical dos bebês por meio de instrumentos, jogos rítmicos, canto, movimento corporal e escuta de diferentes estilos musicais. Tudo acontece de forma lúdica, favorecendo o desenvolvimento físico, cognitivo e emocional, além de fortalecer os vínculos afetivos com seus acompanhantes.',
+    sobre: 'O repertório é composto por cantigas e músicas folclóricas, que, de forma divertida, incentivam a criança a cantar, perceber diferentes timbres, experimentar sons, desenvolver o senso rítmico e dar os primeiros passos no mundo da música.',
+  },
+  {
+    key: 'kids',
+    label: 'Musicalização Kids',
+    idade: 'A partir de 3 anos',
+    duracao: '50 minutos',
+    frequencia: '1 aula por semana',
+    formato: 'Individual, em dupla ou em trio',
+    objetivo: 'O curso de Musicalização Kids é voltado para crianças a partir de 3 anos que estão prontas para explorar o mundo da música de forma mais ativa e interativa.',
+    estrutura: 'As aulas utilizam instrumentos, jogos musicais, canto, percussão corporal e movimento, estimulando a coordenação motora, a percepção rítmica e a socialização. A abordagem é lúdica e adaptada à faixa etária, sempre respeitando o ritmo de cada criança.',
+    sobre: 'A musicalização nessa fase é essencial para o desenvolvimento da criatividade, da concentração e da expressão artística, preparando a criança para o contato futuro com um instrumento específico.',
+  },
+  {
+    key: 'area',
+    label: 'Cursos de Área (instrumento ou canto)',
+    idade: 'A partir de 7 anos',
+    duracao: '50 minutos',
+    frequencia: '1 aula por semana',
+    formato: 'Individual',
+    objetivo: 'Os cursos de área são voltados para alunos que desejam aprofundar o estudo em um instrumento específico ou no canto.',
+    estrutura: 'As aulas são individuais e personalizadas, com foco em técnica, repertório, leitura musical e interpretação. O professor adapta a metodologia ao perfil e aos objetivos de cada aluno, equilibrando prática e teoria de forma integrada.',
+    sobre: 'Oferecemos cursos de violão, guitarra, baixo, cavaco, ukulele, violino, violoncelo, piano, acordeon, bateria, saxofone, flauta transversal, flauta doce e canto. Cada aluno escolhe seu caminho e evolui no seu próprio ritmo.',
+  },
+  {
+    key: 'adulto',
+    label: 'Instrumentalização Adulto',
+    idade: 'Adultos',
+    duracao: '50 minutos',
+    frequencia: '1 aula por semana',
+    formato: 'Individual',
+    objetivo: 'O curso de Instrumentalização Adulto é pensado para quem deseja começar ou retomar o estudo de um instrumento, independentemente da experiência prévia.',
+    estrutura: 'As aulas são práticas desde o primeiro contato com o instrumento, com a teoria surgindo de forma integrada. O professor adapta a metodologia ao perfil e aos objetivos do aluno, equilibrando técnica e diversão.',
+    sobre: 'Nunca é tarde para começar. O curso é ideal para adultos que querem realizar o sonho de tocar um instrumento, desenvolver um hobby ou simplesmente se conectar com a música de forma prazerosa.',
+  },
+  {
+    key: 'banda',
+    label: 'Prática de Banda',
+    idade: 'Todos os níveis',
+    duracao: '60 minutos',
+    frequencia: '1 aula por semana',
+    formato: 'Em grupo até 5 alunos',
+    objetivo: 'A Prática de Banda é uma vivência musical em grupo, onde alunos de diferentes instrumentos se reúnem para tocar juntos.',
+    estrutura: 'As aulas desenvolvem escuta, senso de conjunto, timing e a capacidade de tocar em grupo. O repertório é construído coletivamente, com foco em músicas que desafiam e motivam os alunos.',
+    sobre: 'Ao longo do ano, os alunos participam de apresentações e vivenciam o prazer de fazer música em conjunto, fortalecendo a autoconfiança e a expressão artística.',
+  },
+];
+
+const featureCards = [
+  {
+    title: 'Aulas Especializadas para Todos os Níveis e Idades!',
+    desc: 'Oferecemos aulas de música para todas as idades, com metodologia personalizada que estimula o aprendizado e a criatividade em um ambiente leve e divertido.',
+  },
+  {
+    title: 'Aulas Personalizadas e Divertidas',
+    desc: 'Oferecemos aulas para todas as idades, adaptadas às suas necessidades individuais. Nossas aulas são dinâmicas, proporcionando um ambiente divertido que estimula o aprendizado e a criatividade.',
+  },
+  {
+    title: 'Descubra o Poder da Música',
+    desc: 'Venha experimentar a transformação que a música pode trazer à sua vida. Aprenda a tocar seu instrumento com confiança e maestria no Anacã Música!',
+  },
+];
 ---
 
 <BaseLayout title="Cursos" description="Conheça os cursos de música da Anacã. Aulas de violão, piano, bateria, canto, saxofone e muito mais.">
   <Hero
-    title="Conheça nossos cursos"
-    subtitles={["Cursos"]}
+    title="Aprenda com quem faz da música um estilo de vida."
+    subtitles={["Professores"]}
     backgroundImage="/images/hero-professores.webp"
     compact
   />
 
+  <!-- Conheça nossos cursos — tabbed course info -->
   <section class="section section--light">
     <div class="container">
-      <TabsCarousel variant="light" slides={3} tabs={tabs.map(t => ({ key: t.key, label: t.label }))} id="cursos-tabs">
+      <div class="cursos-header">
+        <h2>Conheça nossos cursos</h2>
+      </div>
+
+      <div class="cursos-info" id="cursos-info">
+        <nav class="cursos-info__nav">
+          {cursosInfo.map((c, i) => (
+            <button
+              class:list={['cursos-info__tab', { active: i === 0 }]}
+              data-info-tab={c.key}
+            >
+              {c.label}
+            </button>
+          ))}
+        </nav>
+
+        <div class="cursos-info__panels">
+          {cursosInfo.map((c, i) => (
+            <div
+              class:list={['cursos-info__panel', { active: i === 0 }]}
+              data-info-panel={c.key}
+            >
+              <div class="cursos-info__meta">
+                <span class="meta-item"><strong>{c.idade}</strong></span>
+                <span class="meta-item"><strong>{c.duracao}</strong></span>
+                <span class="meta-item"><strong>{c.frequencia}</strong></span>
+                <span class="meta-item meta-item--accent"><strong>{c.formato}</strong></span>
+              </div>
+
+              <div class="cursos-info__content">
+                <h3 class="cursos-info__label">Objetivo:</h3>
+                <p>{c.objetivo}</p>
+
+                <h3 class="cursos-info__label">Estrutura:</h3>
+                <p>{c.estrutura}</p>
+
+                <h3 class="cursos-info__label">Sobre o curso:</h3>
+                <p>{c.sobre}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cursos carousel -->
+  <section class="section">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: var(--space-lg);">
+        <h6 style="color: var(--color-accent);">Cursos</h6>
+        <h2>Conheça nossos cursos</h2>
+        <h4 style="color: var(--color-text-muted); max-width: 700px; margin-inline: auto;">
+          Oferecemos aulas de música para todas as idades, adaptadas às suas necessidades individuais. Nossas aulas de música são envolventes e dinâmicas.
+        </h4>
+      </div>
+
+      <TabsCarousel variant="dark" slides={3} tabs={tabs.map(t => ({ key: t.key, label: t.label }))} id="cursos-tabs">
         {tabs.map(tab => (
           <div data-tab-content={tab.key}>
             {tab.cursos.map(curso => (
@@ -44,5 +176,262 @@ const tabs = Object.entries(categorias).map(([key, cat]) => ({
       </TabsCarousel>
     </div>
   </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Venha descobrir o mundo da música no Anacã</h2>
+      <p>Inscreva-se hoje e comece sua jornada musical!</p>
+      <Button text="Descubra Mais" />
+    </div>
+  </section>
+
+  <!-- Feature cards -->
+  <section class="section">
+    <div class="container">
+      <div class="features-grid">
+        {featureCards.map(card => (
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h6 class="feature-card__title">{card.title}</h6>
+            <p class="feature-card__desc">{card.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 
+<style>
+  /* Cursos header */
+  .cursos-header {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+  }
+
+  .cursos-header h2 {
+    color: var(--color-text-dark);
+  }
+
+  /* Cursos info tabs */
+  .cursos-info {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: var(--space-lg);
+    align-items: start;
+  }
+
+  .cursos-info__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .cursos-info__tab {
+    text-align: left;
+    padding: 14px 16px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  .cursos-info__tab:first-child {
+    border-top: 1px solid #ddd;
+  }
+
+  .cursos-info__tab:hover {
+    color: var(--color-accent);
+  }
+
+  .cursos-info__tab.active {
+    color: var(--color-accent);
+    font-weight: 600;
+    border-bottom-color: var(--color-accent);
+  }
+
+  /* Panels */
+  .cursos-info__panel {
+    display: none;
+  }
+
+  .cursos-info__panel.active {
+    display: block;
+  }
+
+  .cursos-info__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid #ddd;
+  }
+
+  .meta-item {
+    font-family: var(--font-body);
+    font-size: 15px;
+    color: var(--color-text-dark);
+  }
+
+  .meta-item--accent {
+    color: var(--color-accent);
+    font-family: var(--font-heading);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .cursos-info__label {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    text-transform: none;
+    letter-spacing: 0;
+    margin-bottom: var(--space-xs);
+    margin-top: var(--space-md);
+  }
+
+  .cursos-info__label:first-child {
+    margin-top: 0;
+  }
+
+  .cursos-info__content p {
+    color: var(--color-text-body);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    padding: 80px 0;
+    background-image:
+      linear-gradient(90deg, #000000 45%, #00000000 100%),
+      url('/images/cta-piano.webp');
+    background-position: center right;
+    background-size: cover;
+  }
+
+  .cta-banner h2 {
+    color: var(--color-text);
+    max-width: 600px;
+    margin-bottom: var(--space-xs);
+  }
+
+  .cta-banner p {
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+  }
+
+  /* Feature cards */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .feature-card {
+    text-align: center;
+    padding: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+  }
+
+  .feature-card__icon {
+    color: var(--color-accent);
+    margin-bottom: var(--space-md);
+  }
+
+  .feature-card__title {
+    color: var(--color-text);
+    margin-bottom: var(--space-sm);
+  }
+
+  .feature-card__desc {
+    color: var(--color-text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .cursos-info {
+      grid-template-columns: 1fr;
+    }
+
+    .cursos-info__nav {
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 0;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .cursos-info__nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .cursos-info__tab {
+      white-space: nowrap;
+      border-bottom: 2px solid #ddd;
+      border-top: none;
+      font-size: 13px;
+      padding: 10px 14px;
+    }
+
+    .cursos-info__tab:first-child {
+      border-top: none;
+    }
+
+    .cursos-info__tab.active {
+      border-bottom-color: var(--color-accent);
+    }
+
+    .cursos-info__meta {
+      gap: var(--space-sm);
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .cta-banner {
+      padding: 48px 0;
+    }
+
+    .cta-banner h2 {
+      font-size: 32px;
+    }
+  }
+</style>
+
+<script>
+  const infoSection = document.getElementById('cursos-info');
+  if (infoSection) {
+    const tabs = infoSection.querySelectorAll('.cursos-info__tab');
+    const panels = infoSection.querySelectorAll('.cursos-info__panel');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const key = (tab as HTMLElement).dataset.infoTab;
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        infoSection.querySelector(`[data-info-panel="${key}"]`)?.classList.add('active');
+      });
+    });
+  }
+</script>
