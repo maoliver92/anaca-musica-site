@@ -21,10 +21,14 @@ const cursosInfo = [
   {
     key: 'baby',
     label: 'Musicalização para Bebês',
-    idade: 'A partir de 6 meses',
-    duracao: '50 minutos',
-    frequencia: '1 aula por semana',
-    formato: 'Individual, em dupla ou em trio',
+    meta: [
+      { num: '6', text: 'meses', prefix: 'A partir de' },
+      { num: '40', text: 'minutos' },
+      { num: '1', text: 'aula por semana' },
+    ],
+    formato: 'Em grupo',
+    formatoDetalhe: 'até 5 alunos',
+    imagem: '/images/cursos/musicalizacao-para-bebes.webp',
     objetivo: 'O curso de Musicalização Baby é um convite para que os pequenos, a partir dos 6 meses, tenham seu primeiro contato com o universo sonoro de forma divertida e natural.',
     estrutura: 'As aulas são pensadas para estimular a percepção musical dos bebês por meio de instrumentos, jogos rítmicos, canto, movimento corporal e escuta de diferentes estilos musicais. Tudo acontece de forma lúdica, favorecendo o desenvolvimento físico, cognitivo e emocional, além de fortalecer os vínculos afetivos com seus acompanhantes.',
     sobre: 'O repertório é composto por cantigas e músicas folclóricas, que, de forma divertida, incentivam a criança a cantar, perceber diferentes timbres, experimentar sons, desenvolver o senso rítmico e dar os primeiros passos no mundo da música.',
@@ -32,21 +36,29 @@ const cursosInfo = [
   {
     key: 'kids',
     label: 'Musicalização Kids',
-    idade: 'A partir de 3 anos',
-    duracao: '50 minutos',
-    frequencia: '1 aula por semana',
+    meta: [
+      { num: '3', text: 'anos', prefix: 'A partir de' },
+      { num: '50', text: 'minutos' },
+      { num: '1', text: 'aula por semana' },
+    ],
     formato: 'Individual, em dupla ou em trio',
+    formatoDetalhe: '',
+    imagem: '/images/cursos/instrumentalizacao-infantil.webp',
     objetivo: 'O curso de Musicalização Kids é voltado para crianças a partir de 3 anos que estão prontas para explorar o mundo da música de forma mais ativa e interativa.',
     estrutura: 'As aulas utilizam instrumentos, jogos musicais, canto, percussão corporal e movimento, estimulando a coordenação motora, a percepção rítmica e a socialização. A abordagem é lúdica e adaptada à faixa etária, sempre respeitando o ritmo de cada criança.',
     sobre: 'A musicalização nessa fase é essencial para o desenvolvimento da criatividade, da concentração e da expressão artística, preparando a criança para o contato futuro com um instrumento específico.',
   },
   {
     key: 'area',
-    label: 'Cursos de Área (instrumento ou canto)',
-    idade: 'A partir de 7 anos',
-    duracao: '50 minutos',
-    frequencia: '1 aula por semana',
+    label: 'Cursos de Área (intrsumento ou canto)',
+    meta: [
+      { num: '7', text: 'anos', prefix: 'A partir de' },
+      { num: '50', text: 'minutos' },
+      { num: '1', text: 'aula por semana' },
+    ],
     formato: 'Individual',
+    formatoDetalhe: '',
+    imagem: '/images/cursos/violao-card.webp',
     objetivo: 'Os cursos de área são voltados para alunos que desejam aprofundar o estudo em um instrumento específico ou no canto.',
     estrutura: 'As aulas são individuais e personalizadas, com foco em técnica, repertório, leitura musical e interpretação. O professor adapta a metodologia ao perfil e aos objetivos de cada aluno, equilibrando prática e teoria de forma integrada.',
     sobre: 'Oferecemos cursos de violão, guitarra, baixo, cavaco, ukulele, violino, violoncelo, piano, acordeon, bateria, saxofone, flauta transversal, flauta doce e canto. Cada aluno escolhe seu caminho e evolui no seu próprio ritmo.',
@@ -54,10 +66,14 @@ const cursosInfo = [
   {
     key: 'adulto',
     label: 'Instrumentalização Adulto',
-    idade: 'Adultos',
-    duracao: '50 minutos',
-    frequencia: '1 aula por semana',
+    meta: [
+      { num: '18', text: 'anos', prefix: 'A partir de' },
+      { num: '50', text: 'minutos' },
+      { num: '1', text: 'aula por semana' },
+    ],
     formato: 'Individual',
+    formatoDetalhe: '',
+    imagem: '/images/cursos/piano-card.webp',
     objetivo: 'O curso de Instrumentalização Adulto é pensado para quem deseja começar ou retomar o estudo de um instrumento, independentemente da experiência prévia.',
     estrutura: 'As aulas são práticas desde o primeiro contato com o instrumento, com a teoria surgindo de forma integrada. O professor adapta a metodologia ao perfil e aos objetivos do aluno, equilibrando técnica e diversão.',
     sobre: 'Nunca é tarde para começar. O curso é ideal para adultos que querem realizar o sonho de tocar um instrumento, desenvolver um hobby ou simplesmente se conectar com a música de forma prazerosa.',
@@ -65,10 +81,13 @@ const cursosInfo = [
   {
     key: 'banda',
     label: 'Prática de Banda',
-    idade: 'Todos os níveis',
-    duracao: '60 minutos',
-    frequencia: '1 aula por semana',
-    formato: 'Em grupo até 5 alunos',
+    meta: [
+      { num: '60', text: 'minutos' },
+      { num: '1', text: 'aula por semana' },
+    ],
+    formato: 'Em grupo',
+    formatoDetalhe: 'até 5 alunos',
+    imagem: '/images/cursos/bateria-card.webp',
     objetivo: 'A Prática de Banda é uma vivência musical em grupo, onde alunos de diferentes instrumentos se reúnem para tocar juntos.',
     estrutura: 'As aulas desenvolvem escuta, senso de conjunto, timing e a capacidade de tocar em grupo. O repertório é construído coletivamente, com foco em músicas que desafiam e motivam os alunos.',
     sobre: 'Ao longo do ano, os alunos participam de apresentações e vivenciam o prazer de fazer música em conjunto, fortalecendo a autoconfiança e a expressão artística.',
@@ -94,17 +113,15 @@ const featureCards = [
 <BaseLayout title="Cursos" description="Conheça os cursos de música da Anacã. Aulas de violão, piano, bateria, canto, saxofone e muito mais.">
   <Hero
     title="Aprenda com quem faz da música um estilo de vida."
-    subtitles={["Professores"]}
+    subtitles={["Cursos"]}
     backgroundImage="/images/hero-professores.webp"
     compact
   />
 
-  <!-- Conheça nossos cursos — tabbed course info -->
-  <section class="section section--light">
+  <!-- Conheça nossos cursos — dark bg, tabbed info -->
+  <section class="section cursos-section">
     <div class="container">
-      <div class="cursos-header">
-        <h2>Conheça nossos cursos</h2>
-      </div>
+      <h2 class="cursos-heading">Conheça nossos cursos</h2>
 
       <div class="cursos-info" id="cursos-info">
         <nav class="cursos-info__nav">
@@ -124,22 +141,38 @@ const featureCards = [
               class:list={['cursos-info__panel', { active: i === 0 }]}
               data-info-panel={c.key}
             >
+              <!-- Meta row with big numbers -->
               <div class="cursos-info__meta">
-                <span class="meta-item"><strong>{c.idade}</strong></span>
-                <span class="meta-item"><strong>{c.duracao}</strong></span>
-                <span class="meta-item"><strong>{c.frequencia}</strong></span>
-                <span class="meta-item meta-item--accent"><strong>{c.formato}</strong></span>
+                {c.meta.map(m => (
+                  <span class="meta-item">
+                    {m.prefix && <span class="meta-prefix">{m.prefix} </span>}
+                    <span class="meta-num">{m.num}</span>
+                    <span class="meta-text"> {m.text}</span>
+                  </span>
+                ))}
+                <span class="meta-item meta-item--formato">
+                  <span class="meta-formato">{c.formato}</span>
+                  {c.formatoDetalhe && <span class="meta-text"> {c.formatoDetalhe}</span>}
+                </span>
               </div>
 
+              <!-- Image -->
+              <img src={c.imagem} alt={c.label} class="cursos-info__img" loading="lazy" width="900" height="500" />
+
+              <!-- Content: label left, text right -->
               <div class="cursos-info__content">
-                <h3 class="cursos-info__label">Objetivo:</h3>
-                <p>{c.objetivo}</p>
-
-                <h3 class="cursos-info__label">Estrutura:</h3>
-                <p>{c.estrutura}</p>
-
-                <h3 class="cursos-info__label">Sobre o curso:</h3>
-                <p>{c.sobre}</p>
+                <div class="cursos-info__row">
+                  <h3 class="cursos-info__label">Objetivo:</h3>
+                  <p>{c.objetivo}</p>
+                </div>
+                <div class="cursos-info__row">
+                  <h3 class="cursos-info__label">Estrutura:</h3>
+                  <p>{c.estrutura}</p>
+                </div>
+                <div class="cursos-info__row">
+                  <h3 class="cursos-info__label">Sobre o curso:</h3>
+                  <p>{c.sobre}</p>
+                </div>
               </div>
             </div>
           ))}
@@ -208,48 +241,52 @@ const featureCards = [
 </BaseLayout>
 
 <style>
-  /* Cursos header */
-  .cursos-header {
+  /* Hero title max-width */
+  :global(.hero--compact .hero__title) {
+    max-width: 750px;
+    margin-inline: auto;
+  }
+
+  /* ===== SECTION: Conheça nossos cursos (DARK bg) ===== */
+  .cursos-section {
+    background: var(--color-bg);
+  }
+
+  .cursos-heading {
     text-align: center;
     margin-bottom: var(--space-xl);
+    color: var(--color-text);
   }
 
-  .cursos-header h2 {
-    color: var(--color-text-dark);
-  }
-
-  /* Cursos info tabs */
+  /* Layout: sidebar nav + panels */
   .cursos-info {
     display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: var(--space-lg);
+    grid-template-columns: 260px 1fr;
+    gap: var(--space-xl);
     align-items: start;
   }
 
+  /* Sidebar nav */
   .cursos-info__nav {
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
   .cursos-info__tab {
     text-align: left;
-    padding: 14px 16px;
+    padding: 16px 0;
     background: transparent;
     border: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
     font-family: var(--font-body);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
-    color: var(--color-text-dark);
+    color: var(--color-text);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: color 0.2s;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
-
-  .cursos-info__tab:first-child {
-    border-top: 1px solid #ddd;
+    letter-spacing: 0.05em;
+    line-height: 1.4;
   }
 
   .cursos-info__tab:hover {
@@ -259,7 +296,6 @@ const featureCards = [
   .cursos-info__tab.active {
     color: var(--color-accent);
     font-weight: 600;
-    border-bottom-color: var(--color-accent);
   }
 
   /* Panels */
@@ -271,51 +307,89 @@ const featureCards = [
     display: block;
   }
 
+  /* Meta row — big numbers mixed typography */
   .cursos-info__meta {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space-md);
+    align-items: baseline;
+    gap: var(--space-lg);
     margin-bottom: var(--space-lg);
-    padding-bottom: var(--space-md);
-    border-bottom: 1px solid #ddd;
   }
 
   .meta-item {
+    color: var(--color-text);
     font-family: var(--font-body);
     font-size: 15px;
-    color: var(--color-text-dark);
+    font-weight: 300;
   }
 
-  .meta-item--accent {
-    color: var(--color-accent);
+  .meta-prefix {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .meta-num {
     font-family: var(--font-heading);
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .meta-text {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .meta-item--formato {
+    color: var(--color-accent);
+  }
+
+  .meta-formato {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 800;
     text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  /* Image */
+  .cursos-info__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--space-lg);
+  }
+
+  /* Content rows: label left, text right */
+  .cursos-info__row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+    align-items: start;
   }
 
   .cursos-info__label {
     font-family: var(--font-heading);
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
-    color: var(--color-text-dark);
+    color: var(--color-text);
     text-transform: none;
-    letter-spacing: 0;
-    margin-bottom: var(--space-xs);
-    margin-top: var(--space-md);
-  }
-
-  .cursos-info__label:first-child {
-    margin-top: 0;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
   }
 
   .cursos-info__content p {
-    color: var(--color-text-body);
+    color: var(--color-text-muted);
     line-height: 1.7;
-    margin-bottom: var(--space-sm);
+    font-size: 15px;
   }
 
-  /* CTA Banner */
+  /* ===== CTA Banner ===== */
   .cta-banner {
     padding: 80px 0;
     background-image:
@@ -336,7 +410,7 @@ const featureCards = [
     margin-bottom: var(--space-md);
   }
 
-  /* Feature cards */
+  /* ===== Feature cards ===== */
   .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -366,18 +440,20 @@ const featureCards = [
     line-height: 1.6;
   }
 
-  /* Mobile */
+  /* ===== Mobile ===== */
   @media (max-width: 768px) {
     .cursos-info {
       grid-template-columns: 1fr;
+      gap: var(--space-lg);
     }
 
     .cursos-info__nav {
       flex-direction: row;
       overflow-x: auto;
-      gap: 0;
       -webkit-overflow-scrolling: touch;
       scrollbar-width: none;
+      gap: 0;
+      border-bottom: 1px solid #333;
     }
 
     .cursos-info__nav::-webkit-scrollbar {
@@ -386,14 +462,9 @@ const featureCards = [
 
     .cursos-info__tab {
       white-space: nowrap;
-      border-bottom: 2px solid #ddd;
-      border-top: none;
-      font-size: 13px;
+      border-bottom: 2px solid transparent;
+      font-size: 12px;
       padding: 10px 14px;
-    }
-
-    .cursos-info__tab:first-child {
-      border-top: none;
     }
 
     .cursos-info__tab.active {
@@ -401,7 +472,24 @@ const featureCards = [
     }
 
     .cursos-info__meta {
-      gap: var(--space-sm);
+      gap: var(--space-md);
+    }
+
+    .meta-num {
+      font-size: 30px;
+    }
+
+    .meta-formato {
+      font-size: 22px;
+    }
+
+    .cursos-info__row {
+      grid-template-columns: 1fr;
+      gap: var(--space-xs);
+    }
+
+    .cursos-info__label {
+      font-size: 24px;
     }
 
     .features-grid {
