@@ -314,15 +314,19 @@ const cursoMenuItems = cursosByCategory.map(cat => {
     nav?.classList.toggle('open');
   });
 
-  // Mobile: toggle dropdown/subdropdown on click
+  // Mobile: first click opens dropdown, second click navigates
   if (window.matchMedia('(max-width: 768px)').matches) {
     document.querySelectorAll('.has-dropdown > .header__link, .has-submenu > .header__dropdown-link').forEach(link => {
       link.addEventListener('click', (e) => {
         const parent = (link as HTMLElement).parentElement;
         const dropdown = parent?.querySelector(':scope > .header__dropdown, :scope > .header__subdropdown');
         if (dropdown) {
+          if (dropdown.classList.contains('mobile-open')) {
+            // Already open — allow navigation
+            return;
+          }
           e.preventDefault();
-          dropdown.classList.toggle('mobile-open');
+          dropdown.classList.add('mobile-open');
         }
       });
     });
