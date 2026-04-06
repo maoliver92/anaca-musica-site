@@ -203,7 +203,15 @@ ul, ol {
 
 /* Section */
 .section {
-  padding: var(--section-padding) 0;
+  padding-block: var(--section-padding);
+}
+
+.section--overflow {
+  overflow: hidden;
+}
+
+.section--lg {
+  padding-block: calc(var(--section-padding) * 1.25);
 }
 
 /* Light section (white bg, dark text) */
@@ -237,13 +245,12 @@ ul, ol {
   align-items: center;
   position: relative;
   background: var(--hero-bg, none) center/cover no-repeat;
-  padding: 80px 0;
+  padding-block: var(--section-padding);
 }
 
 @media (max-width: 767px) {
   .hero {
     min-height: 60vh;
-    padding: 48px 0;
   }
 
   .hero--compact {

@@ -103,7 +103,7 @@ const isKids = d.categoria === 'kids';
       </section>
 
       <!-- NOSSA ESTRUTURA (marquee gallery) -->
-      <section class="section" style="padding: 100px 0; overflow: hidden;">
+      <section class="section section--lg section--overflow">
         <div class="container">
           <div class="kids-estrutura__header">
             <div>
@@ -229,7 +229,7 @@ const isKids = d.categoria === 'kids';
   .c-hero__body {
     position: relative;
     z-index: 1;
-    padding-block: 80px;
+    padding-block: var(--section-padding);
   }
 
   .c-hero__cat {
@@ -287,7 +287,7 @@ const isKids = d.categoria === 'kids';
     flex-direction: column;
     justify-content: center;
     gap: 8px;
-    padding: 30px 0 50px;
+    padding-block: var(--space-lg) var(--space-xl);
   }
 
   .c-sec2__text-col h6 {
@@ -412,7 +412,9 @@ const isKids = d.categoria === 'kids';
 
   @media (min-width: 768px) {
     .c-sec4__text {
-      padding: var(--section-padding) 0 var(--section-padding) var(--container-padding);
+      padding-block: var(--section-padding);
+      padding-inline: 0 0;
+      padding-left: var(--container-padding);
       max-width: calc(var(--container-max) / 2);
     }
 
@@ -449,7 +451,7 @@ const isKids = d.categoria === 'kids';
   /* ── CTA ── */
   .c-cta {
     position: relative;
-    padding: var(--section-padding) 0;
+    padding-block: var(--section-padding);
     background-color: var(--color-bg);
     background-position: center center;
     background-size: cover;
@@ -495,7 +497,7 @@ const isKids = d.categoria === 'kids';
     background-position: bottom center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 10px;
+    padding: calc(var(--section-padding) * 1.25) var(--container-padding);
   }
 
   @media (min-width: 768px) {

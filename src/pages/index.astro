@@ -118,7 +118,7 @@ const depoimentos = [
   </section>
 
   <!-- 5. Estrutura (DARK bg, auto-scrolling rows) -->
-  <section class="section" style="padding: 100px 0; overflow: hidden;">
+  <section class="section section--lg section--overflow">
     <div class="container">
       <h6 style="color: var(--color-accent);" data-reveal="fade-up">Estrutura Anacã</h6>
       <h2 data-reveal="fade-up" data-reveal-delay="100">Conheça nosso espaço</h2>
@@ -217,7 +217,7 @@ const depoimentos = [
     background-image: url('/images/descubra-som.webp');
     background-position: center left;
     background-size: cover;
-    padding: 80px 0;
+    padding-block: var(--section-padding);
   }
 
   .descubra-img-mobile {
@@ -252,7 +252,7 @@ const depoimentos = [
   /* CTA Banner - bg image + gradient left, FILLED button */
   .cta-banner {
     min-height: auto;
-    padding: 80px 0;
+    padding-block: var(--section-padding);
     background-image:
       linear-gradient(90deg, #000000 45%, #00000000 100%),
       url('/images/cta-piano.webp');
@@ -417,10 +417,6 @@ const depoimentos = [
 
     .depoimento {
       padding: 20px;
-    }
-
-    .cta-banner {
-      padding: 48px 0;
     }
 
     /* h2 follows global typography */
