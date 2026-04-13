@@ -90,6 +90,12 @@ const { variant, slides, tabs, id } = Astro.props;
     -webkit-user-drag: none;
   }
 
+  .tc-track :global(img) {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
+
   /* Slide widths */
   .tc[data-slides="3"] .tc-track > :global(*) {
     width: calc(33.333% - 20px);
