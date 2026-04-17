@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Button from '../../components/Button.astro';
 import MarqueeGallery from '../../components/MarqueeGallery.astro';
+import TabsCarousel from '../../components/TabsCarousel.astro';
 import { getCollection, render } from 'astro:content';
 import { categorias } from '../../lib/categorias';
 
@@ -354,18 +355,25 @@ for (const p of cursoProfessores) {
           <div class="container">
             <h6 style="color: var(--color-accent);" data-reveal="fade-up">Nosso time</h6>
             <h2 data-reveal="fade-up" data-reveal-delay="100">Quem são os professores de {d.titulo.toLowerCase()}</h2>
-            <div class="c-profs__grid">
-              {cursoProfessores.map((prof, i) => (
-                <a href={`/professor/${prof.data.slug}/`} class="c-profs__card" data-reveal="fade-up" data-reveal-delay={String(i * 100)}>
-                  {prof.data.foto && (
-                    <img src={prof.data.foto} alt={prof.data.nome} class="c-profs__foto" loading="lazy" width="300" height="300" />
-                  )}
-                  <div class="c-profs__info">
-                    <h4 class="c-profs__name">{prof.data.nome}</h4>
-                    {prof.data.excerpt && <p class="c-profs__excerpt">{prof.data.excerpt}</p>}
-                  </div>
-                </a>
-              ))}
+            <div style="margin-top: var(--space-lg);">
+              <TabsCarousel variant="dark" slides={4} tabs={[{ key: 'profs', label: 'Professores' }]} id={`profs-${d.slug}`}>
+                <div data-tab-content="profs">
+                  {cursoProfessores.map(prof => (
+                    <a href={`/professor/${prof.data.slug}/`} class="prof-card">
+                      {prof.data.foto && (
+                        <img src={prof.data.foto} alt={prof.data.nome} class="prof-card__img" loading="lazy" width="300" height="300" />
+                      )}
+                      <div class="prof-card__body">
+                        <h4 class="prof-card__name">{prof.data.nome}</h4>
+                        {prof.data.excerpt && (
+                          <p class="prof-card__bio">{prof.data.excerpt}</p>
+                        )}
+                        <span class="prof-card__link">Saiba Mais</span>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </TabsCarousel>
             </div>
           </div>
         </section>
@@ -860,51 +868,67 @@ for (const p of cursoProfessores) {
     font-style: normal;
   }
 
-  /* ── PROFESSORES DO CURSO ── */
-  .c-profs__grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: var(--space-lg);
-    margin-top: var(--space-lg);
-  }
-
-  .c-profs__card {
+  /* ── PROFESSORES DO CURSO (usa TabsCarousel + prof-card) ── */
+  .prof-card {
     display: block;
     color: inherit;
-    text-decoration: none;
     transition: transform var(--transition);
+    user-select: none;
+    -webkit-user-drag: none;
   }
 
-  .c-profs__card:hover {
+  .prof-card:hover {
     transform: translateY(-4px);
     color: inherit;
   }
 
-  .c-profs__foto {
+  .prof-card__img {
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    margin-bottom: var(--space-sm);
+    pointer-events: none;
   }
 
-  .c-profs__name {
+  .prof-card__body { padding: 10px 0; }
+
+  .prof-card__name {
     font-family: var(--font-body);
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.7em;
     text-transform: none;
     letter-spacing: 0;
     color: var(--color-text);
     margin-bottom: 4px;
   }
 
-  .c-profs__excerpt {
-    color: var(--color-text-muted);
+  .prof-card__bio {
+    color: #CCCCCC;
     font-size: 14px;
     line-height: 1.5;
+    margin-bottom: var(--space-sm);
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+  }
+
+  .prof-card__link {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text);
+    border: 1px solid var(--color-accent);
+    padding: 8px 20px;
+    transition: all var(--transition);
+  }
+
+  .prof-card:hover .prof-card__link {
+    background: var(--color-accent);
+    color: #fff;
   }
 
   /* ── FAQ ── */
