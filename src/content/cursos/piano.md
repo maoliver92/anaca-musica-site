@@ -15,28 +15,16 @@ secao3_h6: "som em movimento"
 secao3_h2: "A linguagem musical do piano"
 secao3_h4: "O piano é um dos instrumentos mais completos da música."
 secao3_corpo: |
-  O piano é, sem exagero, o instrumento mais completo que existe. Enquanto a maioria dos instrumentos produz uma nota por vez ou trabalha apenas melodia ou ritmo, o piano permite tocar melodia, harmonia e ritmo simultaneamente — com apenas um músico. É por isso que compositores de todas as épocas escolheram o piano como ferramenta principal de criação, de Bach a Tom Jobim, de Beethoven a Stevie Wonder.
+  Presente em diversos estilos — do clássico ao jazz, da MPB ao pop —, o piano permite explorar melodia, harmonia e ritmo de forma integrada. É um dos poucos instrumentos que possibilita tocar todas essas dimensões simultaneamente.
 
-  No universo clássico, o piano é o protagonista de concertos, sonatas e recitais que atravessam séculos de repertório. Estudar piano clássico desenvolve uma técnica refinada, leitura de partitura avançada e uma compreensão profunda de estrutura musical. Já no universo popular — MPB, jazz, pop, rock, gospel — o piano e o teclado são a base harmônica de bandas e arranjos, com liberdade para improvisar, acompanhar e criar.
-
-  Uma das grandes vantagens do piano é que ele ensina harmonia de forma visual e intuitiva. As teclas estão dispostas em sequência cromática, o que facilita a compreensão de intervalos, acordes e escalas. Diferente de instrumentos como o violão, onde a mesma nota pode estar em posições diferentes, no piano cada nota tem um lugar fixo — e isso acelera o aprendizado teórico.
-
-  Além disso, o piano desenvolve a independência das mãos de forma única: a mão esquerda trabalha baixos e harmonia enquanto a direita conduz a melodia. Essa coordenação bilateral estimula conexões neurais que beneficiam não apenas a música, mas a concentração, a memória e o raciocínio lógico. Estudos em neurociência mostram que pianistas desenvolvem maior densidade de fibras no corpo caloso — a estrutura que conecta os dois hemisférios do cérebro.
-
-  Por tudo isso, o piano é frequentemente recomendado como primeiro instrumento para quem quer entender música de verdade. Mesmo quem escolhe outro instrumento depois se beneficia enormemente de ter passado pelo piano — a base harmônica e teórica que ele oferece é transferível para qualquer área da música.
+  Estudar piano desenvolve coordenação entre as mãos, compreensão harmônica e escuta musical apurada. As teclas dispostas em sequência cromática facilitam a compreensão de intervalos e acordes, tornando o piano uma excelente porta de entrada para o mundo da música.
 secao4_h6: "A música como ponto de partida"
 secao4_h2: "Prática, teoria e repertório integrados desde a primeira aula"
 secao4_h4: "No Anacã Música, o aprendizado é personalizado e construído em conjunto entre aluno e professor, respeitando o ritmo e os objetivos de cada pessoa."
 secao4_corpo: |
-  No Anacã Música, as aulas de piano são conduzidas por professores com trajetórias artísticas e pedagógicas que fazem a diferença. André Faiman, por exemplo, é baterista, tecladista e produtor musical que viveu 10 anos em Toronto, onde colaborou com Howard Shore — o compositor vencedor do Oscar pela trilha de O Senhor dos Anéis. Essa experiência internacional traz para as aulas uma visão ampla de produção, arranjo e prática musical em alto nível.
+  As aulas partem da prática e da construção de repertório, sempre conectadas aos interesses do aluno. A teoria surge de forma integrada — nunca como conteúdo abstrato e desconectado da música.
 
-  Outro destaque do nosso corpo docente é Dadinho, tecladista que excursionou com Racionais MC's, um dos grupos mais influentes da música brasileira. Sua vivência no palco e no estúdio oferece aos alunos uma perspectiva real do que significa ser músico profissional — da preparação de repertório à performance ao vivo.
-
-  Essa diversidade de perfis é intencional. Acreditamos que cada aluno tem afinidades e objetivos diferentes, e ter professores com experiências variadas permite que cada pessoa encontre a abordagem ideal. Quem busca técnica clássica, quem quer tocar MPB, quem sonha com jazz ou quem precisa do teclado para produção musical — todos encontram orientação qualificada.
-
-  Desde a primeira aula, o aluno já toca. A teoria é introduzida de forma orgânica, a partir de situações musicais reais — nunca como conteúdo abstrato e desconectado da prática. O repertório é construído em conjunto, respeitando os gostos e o ritmo de evolução de cada pessoa.
-
-  As salas do Anacã são equipadas com pianos e teclados de alta qualidade, em um ambiente preparado acusticamente para que o aluno tenha a melhor experiência sonora possível. Tocar piano aqui é desenvolver musicalidade de forma consistente, prazerosa e com acompanhamento de quem realmente entende de música.
+  Contamos com professores de diferentes perfis e estilos, incluindo músicos com experiência internacional e trabalho com artistas renomados. Isso permite que cada aluno encontre a abordagem ideal — seja clássico, popular, jazz ou produção musical.
 cta_h6: "Mais do que aprender um instrumento,"
 cta_h2: "tocar piano no Anacã é viver a música de forma autêntica"
 cta_p: "respeitando o tempo de cada um e valorizando o prazer de tocar."

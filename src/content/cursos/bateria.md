@@ -15,28 +15,16 @@ secao3_h6: "som em movimento"
 secao3_h2: "A linguagem musical da bateria"
 secao3_h4: "Presente em diversos estilos musicais, ela é responsável por conduzir o tempo, criar dinâmica e dar energia à música."
 secao3_corpo: |
-  A bateria é o instrumento que dá pulso à música. É ela que define o andamento, sustenta o groove e conecta todos os outros instrumentos em uma base rítmica sólida. Do rock ao jazz, do pop ao funk, do samba ao gospel, a bateria é presença essencial em praticamente todos os gêneros musicais — e cada estilo traz suas levadas, timbres e formas de tocar.
+  Do rock ao jazz, do pop ao funk, da música brasileira aos estilos contemporâneos, a bateria é fundamental para o pulso e a identidade de uma banda.
 
-  Mais do que marcar o tempo, a bateria é um instrumento de expressão. O baterista trabalha com dinâmicas — do pianíssimo ao fortíssimo —, explorando acentos, ghost notes, flams e diferentes texturas nos pratos e peles. É um instrumento que convida o corpo inteiro a participar: mãos, pés, braços e tronco se coordenam em movimentos que exigem independência, precisão e musicalidade.
-
-  Estudar bateria desenvolve habilidades que vão além da música. A coordenação motora entre os quatro membros é um desafio único que estimula conexões neurais, melhora a concentração e trabalha a noção de tempo de forma profunda. Pesquisas em neurociência mostram que bateristas desenvolvem uma capacidade incomum de multitarefa e processamento rítmico — benefícios que se estendem para o dia a dia.
-
-  Nas aulas, o aluno aprende a construir grooves nos mais variados estilos: o backbeat do rock, o swing do jazz, o suingue do samba, a síncope do funk, a leveza da bossa nova e a energia do pop contemporâneo. A cada estilo, novos padrões de coordenação e novas possibilidades sonoras se abrem, ampliando o vocabulário musical do baterista.
-
-  O estudo de rudimentos — como paradiddles, flam taps, rolls e drags — forma a base técnica que permite ao aluno executar viradas criativas, solos expressivos e passagens rítmicas complexas. Combinados com a prática de músicas reais, esses fundamentos transformam o iniciante em um baterista musical, capaz de tocar com segurança em qualquer contexto.
+  Estudar bateria desenvolve coordenação motora, concentração, percepção rítmica e escuta musical. É um instrumento que trabalha o corpo inteiro e estimula a expressão, permitindo que o aluno explore diferentes sons, grooves e formas de tocar.
 secao4_h6: "A música como ponto de partida"
 secao4_h2: "Prática, teoria e repertório integrados desde a primeira aula"
 secao4_h4: "No Anacã Música, o aprendizado é personalizado e construído em conjunto entre aluno e professor, respeitando o ritmo e os objetivos de cada pessoa."
 secao4_corpo: |
-  A Anacã Música conta com 3 salas dedicadas exclusivamente à bateria, cada uma com tratamento acústico profissional e equipamentos de alta qualidade. Esse investimento em infraestrutura garante que o aluno estude em condições reais de som — sem limitações de volume ou timbre —, desenvolvendo desde cedo uma escuta apurada e uma relação autêntica com o instrumento.
+  As aulas são práticas desde a primeira experiência com o instrumento. O aluno senta atrás do kit, aprende postura e grip corretos e já começa a tocar ritmos. A teoria surge de forma integrada à prática, sempre a serviço da música.
 
-  Os professores de bateria da Anacã trazem experiências que conectam a sala de aula ao palco de verdade. Dadinho, músico dos Racionais MC's, carrega décadas de estrada com turnês internacionais, participação em documentários da Netflix e uma vivência rítmica forjada nos palcos mais exigentes do Brasil. André Faiman viveu 10 anos em Toronto, onde trabalhou com nomes como Howard Shore — compositor das trilhas de O Senhor dos Anéis — e o engenheiro de som Mike Fraser, referência em gravações de rock. Essa diversidade de trajetórias permite que cada aluno encontre um professor cuja abordagem e referências musicais façam sentido para seus objetivos.
-
-  As aulas são práticas desde o primeiro encontro. O aluno senta atrás do kit, aprende a postura correta, o grip das baquetas e já começa a tocar ritmos básicos. A teoria — leitura rítmica, figuras de tempo, compassos — surge de forma orgânica, sempre a serviço da música. O repertório é construído em conjunto: o professor seleciona faixas que desafiam o aluno na medida certa, equilibrando músicas que ele já gosta com peças que ampliam seu horizonte musical.
-
-  O método de ensino respeita o tempo de cada pessoa. Um aluno iniciante de 8 anos terá um caminho diferente de um adulto que já toca e quer aprimorar fills e independência de ostinato. O professor adapta exercícios, escolhe materiais e define metas de curto prazo que mantêm o progresso visível e a motivação em alta. Esse acompanhamento personalizado é o que diferencia uma aula particular de qualidade de tutoriais genéricos na internet.
-
-  Além da técnica individual, a escola incentiva a prática de conjunto. Tocar bateria com outros músicos — guitarristas, baixistas, vocalistas — é uma experiência transformadora que desenvolve escuta, comunicação musical e presença de palco. Na Anacã, o aluno tem a oportunidade de participar de ensaios coletivos e apresentações ao vivo, colocando em prática tudo o que aprendeu em um contexto real de banda.
+  A Anacã conta com 3 salas dedicadas à bateria, com isolamento acústico e equipamentos profissionais. Nossos professores incluem músicos com experiência em turnês internacionais e trabalho em estúdios no Brasil e no exterior, garantindo que cada aluno encontre a abordagem que mais combina com seus interesses musicais.
 cta_h6: "Mais do que aprender um instrumento,"
 cta_h2: "tocar bateria no Anacã é viver a música de forma autêntica"
 cta_p: "respeitando o tempo de cada um e valorizando o prazer de tocar."
