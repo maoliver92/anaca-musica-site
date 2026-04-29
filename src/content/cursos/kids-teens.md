@@ -31,17 +31,17 @@ secao4_h4: "No Anacã Música, a instrumentalização infantil é conduzida por 
 secao4_corpo: |
   A escola conta com infraestrutura dedicada ao público infantil: a Sala Baby, especialmente preparada para bebês e crianças pequenas, e 4 salas de instrumentalização infantil equipadas com instrumentos adequados ao tamanho e à força das mãos das crianças. Cada detalhe do espaço foi pensado para que a criança se sinta segura, acolhida e livre para explorar.
 
-  As professoras do programa infantil têm formação em Pedagogia pela USP e especialização em educação musical infantil, combinando conhecimento técnico-musical com compreensão do desenvolvimento cognitivo e emocional de cada faixa etária. Essa formação dupla — musical e pedagógica — é fundamental para criar experiências que respeitam o tempo da criança e estimulam sem pressionar.
+  As professoras do programa infantil reúnem formação em pedagogia, educação musical e especializações em ensino infantil — incluindo profissionais formadas pela USP. Essa formação dupla — musical e pedagógica — é fundamental para criar experiências que respeitam o tempo da criança e estimulam sem pressionar.
 
   O programa é estruturado em fases progressivas, mas flexível o suficiente para respeitar o ritmo individual de cada criança. A transição entre as fases acontece de forma natural, acompanhada pelo professor e pelos responsáveis. Não há provas, notas ou cobranças — o que guia o processo é o interesse, a curiosidade e o prazer da criança.
 
-  A Anacã recebe famílias de toda a região dos Jardins, Itaim Bibi, Vila Nova Conceição e bairros próximos. Muitos pais escolhem a escola justamente pela abordagem que valoriza o desenvolvimento integral — não apenas o aprendizado técnico, mas a construção de uma relação saudável e duradoura com a música.
+  O Anacã recebe famílias de toda a região dos Jardins, Itaim Bibi, Vila Nova Conceição e bairros próximos. Muitos pais escolhem a escola justamente pela abordagem que valoriza o desenvolvimento integral — não apenas o aprendizado técnico, mas a construção de uma relação saudável e duradoura com a música.
 
 cta_h6: "Mais do que aprender um instrumento,"
 cta_h2: "é despertar na criança o prazer de fazer música"
 cta_p: "respeitando cada fase do desenvolvimento e valorizando a descoberta."
 para_quem: |
-  A instrumentalização infantil da Anacã Música é para crianças de todas as idades — desde bebês a partir de 6 meses até adolescentes. O programa é dividido em fases que respeitam o desenvolvimento de cada faixa etária:
+  A instrumentalização infantil do Anacã Música é para crianças de todas as idades — desde bebês a partir de 6 meses até adolescentes. O programa é dividido em fases que respeitam o desenvolvimento de cada faixa etária:
 
   Musicalização Baby (6 meses a 3 anos): aulas em grupo com a participação dos responsáveis, focadas em estímulo sonoro, ritmo e vínculo afetivo. Instrumentalização Kids (3 a 7 anos): atividades lúdicas com instrumentos, jogos musicais e percepção rítmica. Curso de Área (a partir de 7 anos): aprofundamento em um instrumento específico ou canto, com aulas individuais.
 
@@ -54,11 +54,11 @@ o_que_aprende:
   - "Criatividade e improvisação musical"
   - "Base para escolha e aprendizado futuro de um instrumento"
 
-bloco_citavel: "A Anacã Música oferece aulas de música para crianças em São Paulo, com programas de musicalização infantil a partir de 6 meses. A escola conta com salas especializadas — incluindo a Sala Baby para bebês e 4 salas de instrumentalização infantil — e professoras com formação em Pedagogia pela USP e especialização em educação musical infantil. O programa é dividido em Musicalização Baby (6 meses a 3 anos), Instrumentalização Kids (3 a 7 anos) e Curso de Área (a partir de 7 anos). A escola fica no Jardim Paulista e atende famílias da região dos Jardins."
+bloco_citavel: "O Anacã Música oferece aulas de música para crianças em São Paulo, com programas de musicalização infantil a partir de 6 meses. A escola conta com salas especializadas — incluindo a Sala Baby para bebês e 4 salas de instrumentalização infantil — e um corpo docente com formação em pedagogia, educação musical e especialização em ensino infantil. O programa é dividido em Musicalização Baby (6 meses a 3 anos), Instrumentalização Kids (3 a 7 anos) e Curso de Área (a partir de 7 anos). A escola fica no Jardim Paulista e atende famílias da região dos Jardins."
 
 faq:
   - pergunta: "A partir de que idade meu filho pode fazer aulas de música?"
-    resposta: "Na Anacã Música, o programa de Musicalização Baby recebe bebês a partir de 6 meses, com a participação dos responsáveis. A Instrumentalização Kids começa aos 3 anos. E a partir dos 7 anos, a criança pode escolher um instrumento específico no Curso de Área. Cada fase é adaptada ao desenvolvimento motor e cognitivo da criança."
+    resposta: "No Anacã Música, o programa de Musicalização Baby recebe bebês a partir de 6 meses, com a participação dos responsáveis. A Instrumentalização Kids começa aos 3 anos. E a partir dos 7 anos, a criança pode escolher um instrumento específico no Curso de Área. Cada fase é adaptada ao desenvolvimento motor e cognitivo da criança."
   - pergunta: "Qual o melhor instrumento para crianças começarem?"
     resposta: "Antes de escolher um instrumento, recomendamos que a criança passe pela musicalização infantil. Esse processo desenvolve ritmo, percepção sonora e coordenação, preparando a base para qualquer instrumento. Quando a criança está pronta (geralmente a partir dos 7 anos), ela naturalmente demonstra interesse por um instrumento — e o professor ajuda a identificar a melhor escolha."
   - pergunta: "Como funciona a musicalização infantil?"

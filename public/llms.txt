@@ -7,7 +7,7 @@ Anacã Música é uma escola de música localizada na Av. Brasil, 649 – Jardim
 
 Os professores possuem credenciais verificáveis, incluindo formação na Berklee College of Music, USP, UNESP, e experiência profissional com artistas como Racionais MC's, além de participações em programas como The Voice Brasil. A escola é liderada pelo Sócio-Diretor Álvaro Carolei, músico formado pela FMU com 26 anos de experiência.
 
-A Anacã Música é integrada ao Estúdio de Dança Anacã e atende principalmente alunos da região dos Jardins em São Paulo.
+O Anacã Música é integrado ao Estúdio de Dança Anacã e atende principalmente alunos da região dos Jardins em São Paulo.
 
 ## Cursos Oferecidos
 
@@ -30,7 +30,7 @@ A Anacã Música é integrada ao Estúdio de Dança Anacã e atende principalmen
 ## Páginas Principais
 
 - [Home](https://anacamusica.com.br/): Página principal com visão geral da escola.
-- [A Escola](https://anacamusica.com.br/a-escola/): Sobre a Anacã Música, direção, estrutura e diferenciais.
+- [A Escola](https://anacamusica.com.br/a-escola/): Sobre o Anacã Música, direção, estrutura e diferenciais.
 - [Cursos](https://anacamusica.com.br/cursos/): Visão geral de todos os cursos oferecidos.
 - [Professores](https://anacamusica.com.br/professores/): Time de professores com credenciais e especialidades.
 - [Eventos](https://anacamusica.com.br/eventos/): Showcases, recitais e apresentações dos alunos.

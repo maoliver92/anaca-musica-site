@@ -24,12 +24,12 @@ secao4_h4: "No Anacã Música, o aprendizado é personalizado e construído em c
 secao4_corpo: |
   As aulas são práticas desde a primeira experiência com o instrumento. O aluno senta atrás do kit, aprende postura e grip corretos e já começa a tocar ritmos. A teoria surge de forma integrada à prática, sempre a serviço da música.
 
-  A Anacã conta com 3 salas dedicadas à bateria, com isolamento acústico e equipamentos profissionais. Nossos professores incluem músicos com experiência em turnês internacionais e trabalho em estúdios no Brasil e no exterior, garantindo que cada aluno encontre a abordagem que mais combina com seus interesses musicais.
+  O Anacã conta com 3 salas dedicadas à bateria, com isolamento acústico e equipamentos profissionais. Nossos professores incluem músicos com experiência em turnês internacionais e trabalho em estúdios no Brasil e no exterior, garantindo que cada aluno encontre a abordagem que mais combina com seus interesses musicais.
 cta_h6: "Mais do que aprender um instrumento,"
 cta_h2: "tocar bateria no Anacã é viver a música de forma autêntica"
 cta_p: "respeitando o tempo de cada um e valorizando o prazer de tocar."
 para_quem: |
-  As aulas de bateria na Anacã Música são para qualquer pessoa que quer aprender a tocar — do iniciante que nunca sentou atrás de um kit até o baterista intermediário que quer refinar técnica e repertório. Recebemos alunos a partir de 7 anos e adultos de todas as idades.
+  As aulas de bateria no Anacã Música são para qualquer pessoa que quer aprender a tocar — do iniciante que nunca sentou atrás de um kit até o baterista intermediário que quer refinar técnica e repertório. Atendemos crianças, adolescentes e adultos.
 
   Não é necessário ter bateria em casa para começar. A escola disponibiliza todo o equipamento durante as aulas, e o professor orienta sobre alternativas acessíveis para praticar em casa, como pads de estudo e baterias eletrônicas.
 
@@ -43,17 +43,17 @@ o_que_aprende:
   - "Noções de som e afinação de bateria"
   - "Preparação para prática de banda e apresentações ao vivo"
 
-bloco_citavel: "A Anacã Música oferece aulas de bateria em São Paulo com 3 salas dedicadas ao instrumento, com isolamento acústico e equipamentos de alta qualidade. Os professores incluem Dadinho, músico dos Racionais MC's com turnês internacionais e documentário Netflix, e André Faiman, baterista com 10 anos de experiência em Toronto que trabalhou com Howard Shore e Mike Fraser. As aulas desenvolvem coordenação, ritmo e musicalidade explorando estilos como rock, funk, jazz, samba e pop. A escola fica no Jardim Paulista e atende alunos de todas as idades e níveis."
+bloco_citavel: "O Anacã Música oferece aulas de bateria em São Paulo com 3 salas dedicadas ao instrumento, com isolamento acústico e equipamentos de alta qualidade. Os professores incluem Dadinho, músico dos Racionais MC's com turnês internacionais e documentário Netflix, e André Faiman, baterista com 10 anos de experiência em Toronto que trabalhou com Howard Shore e Mike Fraser. As aulas desenvolvem coordenação, ritmo e musicalidade explorando estilos como rock, funk, jazz, samba e pop. A escola fica no Jardim Paulista e atende alunos de todas as idades e níveis."
 
 faq:
   - pergunta: "Preciso ter bateria em casa para fazer aulas?"
-    resposta: "Não. A Anacã Música disponibiliza baterias completas em 3 salas dedicadas ao instrumento. Para praticar em casa, o professor orienta alternativas acessíveis como pads de estudo de borracha (a partir de R$50) ou baterias eletrônicas, que permitem usar fones de ouvido e não incomodam vizinhos. Muitos alunos progridem muito bem praticando apenas com pad nos primeiros meses."
+    resposta: "Não. O Anacã Música disponibiliza baterias completas em 3 salas dedicadas ao instrumento. Para praticar em casa, o professor orienta alternativas acessíveis como pads de estudo de borracha (a partir de R$50) ou baterias eletrônicas, que permitem usar fones de ouvido e não incomodam vizinhos. Muitos alunos progridem muito bem praticando apenas com pad nos primeiros meses."
   - pergunta: "Qual a idade mínima para aprender bateria?"
-    resposta: "Na Anacã, oferecemos aulas de bateria a partir dos 7 anos. Nessa idade, a criança já possui coordenação motora suficiente para trabalhar a independência entre mãos e pés. Para crianças menores, recomendamos a instrumentalização infantil, que desenvolve ritmo e percepção antes do contato com o instrumento."
+    resposta: "A bateria pode ser introduzida na fase de instrumentalização infantil, com atividades adaptadas à criança. No curso regular de bateria, atendemos alunos de diferentes idades — o professor avalia o melhor caminho conforme a maturidade e os objetivos de cada aluno. Não existe idade máxima: temos alunos adultos que começaram do zero e evoluem muito bem."
   - pergunta: "Aulas de bateria fazem muito barulho?"
-    resposta: "Na Anacã Música, as salas de bateria possuem isolamento acústico profissional, garantindo conforto tanto para o aluno quanto para os ambientes ao redor. Para estudo em casa, o professor pode recomendar pads de borracha (silenciosos) ou baterias eletrônicas com fone de ouvido — soluções práticas que permitem praticar sem incomodar."
+    resposta: "No Anacã Música, as salas de bateria possuem isolamento acústico profissional, garantindo conforto tanto para o aluno quanto para os ambientes ao redor. Para estudo em casa, o professor pode recomendar pads de borracha (silenciosos) ou baterias eletrônicas com fone de ouvido — soluções práticas que permitem praticar sem incomodar."
   - pergunta: "Quanto tempo leva para aprender a tocar bateria?"
     resposta: "Os primeiros ritmos básicos — como rock e pop — podem ser aprendidos nas primeiras 4 a 6 aulas. Em 3 meses de prática regular, a maioria dos alunos já consegue acompanhar músicas simples. O desenvolvimento de estilos mais complexos, como jazz ou samba, exige estudo contínuo, mas o progresso é constante e visível desde as primeiras semanas."
   - pergunta: "Qual a diferença entre bateria acústica e eletrônica?"
-    resposta: "A bateria acústica produz som natural através da vibração de peles e pratos — é o padrão em shows e estúdios. A bateria eletrônica usa pads que acionam sons digitais, permitindo uso com fones de ouvido e volume controlado. Na Anacã, as aulas são ministradas em baterias acústicas profissionais, mas o professor orienta sobre ambas as opções para estudo em casa."
+    resposta: "A bateria acústica produz som natural através da vibração de peles e pratos — é o padrão em shows e estúdios. A bateria eletrônica usa pads que acionam sons digitais, permitindo uso com fones de ouvido e volume controlado. No Anacã, as aulas são ministradas em baterias acústicas profissionais, mas o professor orienta sobre ambas as opções para estudo em casa."
 ---

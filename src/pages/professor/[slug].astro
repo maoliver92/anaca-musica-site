@@ -21,7 +21,7 @@ const personSchema = {
   name: prof.data.nome,
   url: `https://anacamusica.com.br/professor/${prof.data.slug}/`,
   ...(prof.data.foto && { image: `https://anacamusica.com.br${prof.data.foto}` }),
-  description: prof.data.excerpt || `${prof.data.nome} - Professor(a) na Anacã Música`,
+  description: prof.data.excerpt || `${prof.data.nome} - Professor(a) no Anacã Música`,
   jobTitle: 'Professor(a) de Música',
   worksFor: {
     '@type': 'MusicSchool',
@@ -67,7 +67,7 @@ function modalidadeLabel(mod: string): string {
 
 <BaseLayout
   title={prof.data.nome}
-  description={prof.data.excerpt || `${prof.data.nome} - Professor(a) na Anacã Música`}
+  description={prof.data.excerpt || `${prof.data.nome} - Professor(a) no Anacã Música`}
   image={prof.data.foto}
   schemas={[personSchema]}
 >
